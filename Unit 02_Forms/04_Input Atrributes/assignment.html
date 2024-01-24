@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="files">Give me your files:</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+
+        <label for="email">Enter your email so I can hack it:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <input list="tf2classes">
+        <datalist id="tf2classes">
+            <option value="Scout">
+            <option value="Heavy">
+            <option value="Pyro">
+            <option value="Medic">
+            <option value="Demoman">
+            <option value="Spy">
+            <option value="Soldier">
+        </datalist>
+        <br><br>
+
+        <label for="points">Kills:</label>
+        <input type="number" id="points" name="points" step="5"><br><br>
+
+        <label for="phone">Enter your phone number so I can hack you again:</label>
+        <input type="tel" id="phone"><br><br>
+
+        <input type="submit" value="Submit"><br><br>
+
+    </form>
+</body>
+</html>
