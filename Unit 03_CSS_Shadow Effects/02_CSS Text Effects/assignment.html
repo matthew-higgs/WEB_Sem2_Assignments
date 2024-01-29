@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .side{
+            writing-mode: vertical-rl;
+        }
+
+        .unfinishedline {
+            white-space: nowrap;
+            width: 200px; 
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        You tell lies thinking I can't see <br><br>
+        You can't cry 'cause you're laughing at me <br><br>
+        <span class="side">I'm down</span> (I'm really down) <br>
+        <span class="side">I'm down</span> (Down on the ground) <br>
+        I'm down <br><br>
+        <span class="side">I'm really down</span> <br>
+        How can you laugh when you know <span class="side">I'm down</span> <br>
+        (How can you laugh) When you know <span class="side">I'm down</span> <br>
+    </p>
+    <br>
+    <p class="unfinishedline">There is another Skywalker.</p>
+</body>
+</html>
