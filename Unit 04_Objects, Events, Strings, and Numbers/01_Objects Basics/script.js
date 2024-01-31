@@ -1,20 +1,15 @@
-const person = {
-    first: "John",
-    last: "Doe",
-    id: 1234,
-    fullName: () => {
-        return this.first + " " + this.last;
+const building = {
+    address: "1234 Crystal St.",
+    city: "Indianapolis",
+    state: "IN",
+    floors: 2,
+    fullAddress: function() {
+        return this.address + this.city + this.state;
     }
 };
 
-console.log(person.first);
-console.log(person.last);
-console.log(person.id);
-console.log(person.fullName);
-
-person.first = "Mark"
-person.last = "Barnes"
-console.log(person.first);
-console.log(person.last);
-console.log(person.id);
-console.log(person.fullName());
+console.log(building.address);
+console.log(building.city);
+console.log(building.state);
+console.log(building.floors);
+console.log(building.fullAddress);
