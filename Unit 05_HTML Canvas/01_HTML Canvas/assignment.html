@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <label for="startAngle">Start Angle in Degrees: </label><br>
+        <input type="number" id="startAngle" name="startAngle">
+        <br>
+
+        <label for="endAngle">End Angle in Degrees: </label><br>
+        <input type="number" id="endAngle" name="endAngle">
+        <br>
+
+        <label for="radius">Radius: </label><br>
+        <input type="number" id="radius" name="radius">
+        <br>
+
+        <label for="centerX">CenterX: </label><br>
+        <input type="number" id="centerX" name="centerX">
+        <br>
+
+        <label for="centerY">CenterY: </label><br>
+        <input type="number" id="centerY" name="centerY">
+        <br>
+
+        <label for="ccw">CCW </label><br>
+        <input type="checkbox" id="ccw" name="ccw">
+        <br>
+
+        <br>
+        <button type="button" onclick="drawCircle()">Draw Circle</button>
+        <br>
+        <br>
+
+        <canvas id="myCanvas", width="500" height="500" style="border:1px solid #000000;">
+
+        <script src="script.js"></script>
+
+
+        
+    </body>
+
+</html>
