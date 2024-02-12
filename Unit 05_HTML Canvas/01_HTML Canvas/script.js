@@ -45,3 +45,19 @@ function drawLine() {
     // Stroke it (Do the Drawing)
     ctx.stroke();
 }
+
+function drawRectangle() {
+    let startXaxis = +document.getElementById("startXaxis").value;
+    let startYaxis = +document.getElementById("startYaxis").value;
+    let endXaxis = +document.getElementById("endXaxis").value;
+    let endYaxis = +document.getElementById("endYaxis").value;
+
+    const canvas = document.getElementById("myCanvas3");
+    const ctx = canvas.getContext("2d");
+
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0, "green");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(startXaxis,startYaxis,endXaxis,endYaxis);    
+}
