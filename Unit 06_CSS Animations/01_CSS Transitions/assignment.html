@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shape1 {
+            height: 350px;
+            width: 350px;
+            background-color: darkred;
+            border-radius: 50%;
+            transition: width 2s, height 2s, aspect-ratio 2s, clip-path 2s;
+        }
+
+        .shape1:hover {
+            width: 450px;
+            height: 450px;
+            aspect-ratio: 1;
+            clip-path: polygon(100.00% 50.00%,95.68% 70.34%,83.46% 87.16%,65.45% 97.55%,44.77% 99.73%,25.00% 93.30%,9.55% 79.39%,1.09% 60.40%,1.09% 39.60%,9.55% 20.61%,25.00% 6.70%,44.77% 0.27%,65.45% 2.45%,83.46% 12.84%,95.68% 29.66%);
+        }
+
+        .shape2 {
+            height: 350px;
+            width: 350px;
+            border-radius: 30%;
+            background-color: blueviolet;
+            transition: width 2s, height 2s, border-radius 2s, background-color 2s;
+        }
+
+        .shape2:hover {
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            background-color: purple;
+        }
+
+        .shape3 {
+            height: 450px;
+            width: 450px;
+            border-radius: 50%;
+            background-color: blue;
+            transition: background-color 2s, color 2s;
+            text-align: center;
+            font-size: 100px;
+            color: white;
+        }
+
+        .shape3:hover{
+            background-color: gold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="shape1"></div>
+    <br>
+    <div class="shape2"></div>
+    <br>
+    <div class="shape3"><br>Blue Moon</div>
+</body>
+</html>
