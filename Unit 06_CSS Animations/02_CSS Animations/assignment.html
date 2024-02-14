@@ -6,13 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes sheisarainbow {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: orange; left: 200px; top: 0px;}
+            50% {background-color: yellow; left: 200px; top: 200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:blue; left:0px; top:0px;}
+            125% {background-color: indigo; left: 200px; top: 0px;}
+            150% {background-color: violet; left: 200px; top: 200px;}
+            175% {background-color: red; left: 0px; top: 200px;}
+            200% {background-color: red; left: 0px; top: 0px;}
+        }
+
         .lyrics {
-            width: auto;
+            width: 226px;
             height: auto;
             background-color: red;
             position: relative;
             animation-name: sheisarainbow;
             animation-duration: 5s;
+            animation-timing-function: linear;
+            text-align: center;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        body {
+            background-image: url(sheslikearainbow.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 1600px;
+            margin: 0;
         }
     </style>
 </head>
