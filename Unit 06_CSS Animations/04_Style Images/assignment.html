@@ -47,13 +47,29 @@
             -ms-transform: translate(-50%, -50%);
         }
 
-        .gnome {filter: blur(25px);}
+        .gnome {filter: blur(40px);}
+
+        .gnome:hover {filter: blur(0px);}
 
         .idol {filter: invert(100%);}
 
         .container2 {position: relative; width: 50%;}
-        .DaveGrohl {opacity: 1; display: block; width: 100%; height: auto; transition: 5s ease; backface-visibility: hidden;}
-        .middle1 {transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%;}
+        .DaveGrohl {opacity: 1; display: block; width: 100%; height: auto; transition: 3s ease; backface-visibility: hidden;}
+        .middle1 {transition: .3s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);}
+        .container2:hover .DaveGrohl {opacity: 0.3;}
+        .container2:hover .middle1 {opacity: 1;}
+        .text2 {background-color: red; color: white; font-size: 16px; padding: 16px 32px;}
+
+
+        .mrbadguy1 {}
+        .mrbadguy2 {filter: brightness(360%);}
+        .mrbadguy3 {filter: contrast(480%);}
+        .mrbadguy4 {filter: grayscale(100%);}
+        .mrbadguy5 {filter: hue-rotate(90deg);}
+        .mrbadguy6 {filter: invert(100%);}
+        .mrbadguy7 {filter: saturate(7);}
+        .mrbadguy8 {filter: sepia(100%);}
+        .mrbadguy9 {filter: hue-rotate(280deg);}
     </style>
 </head>
 <body>
@@ -74,11 +90,26 @@
     
     <br>
 
+
+
     <div class="container2">
-        <img src="davegrohl" class="DaveGrohl">
+        <img src="davegrohl.png" class="DaveGrohl">
         <div class="middle1">
             <div class="text2">Beezelboss</div>
         </div>
     </div>
+
+    <br>
+    <img src="FreddieMercury.png" class="mrbadguy1">
+    <img src="FreddieMercury.png" class="mrbadguy2">
+    <img src="FreddieMercury.png" class="mrbadguy3">
+    <br>
+    <img src="FreddieMercury.png" class="mrbadguy4">
+    <img src="FreddieMercury.png" class="mrbadguy5">
+    <img src="FreddieMercury.png" class="mrbadguy6">
+    <br>
+    <img src="FreddieMercury.png" class="mrbadguy7">
+    <img src="FreddieMercury.png" class="mrbadguy8">
+    <img src="FreddieMercury.png" class="mrbadguy9">
 </body>
 </html>
