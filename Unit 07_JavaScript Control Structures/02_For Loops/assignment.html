@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="listlustlistylistmist"></p>
+    <br>
+    <p id="doofus"></p>
+
+    <script>
+        const PKMNtypes = ["Grass", "Fire", "Water"];
+
+        let text = "";
+        for (let x of PKMNtypes) {
+            text += x + "<br>";
+        }
+
+        const person = {fname:"Ash", lname:"Ketchum", age:10}
+
+        let name = "";
+        for (let x in person) {
+            name += person[x] + "<br>";
+        }
+
+        document.getElementById("listlustlistylistmist").innerHTML = text;
+        document.getElementById("doofus").innerHTML = name;
+    </script>
+</body>
+</html>
