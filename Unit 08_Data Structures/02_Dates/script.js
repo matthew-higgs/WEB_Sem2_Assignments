@@ -1,6 +1,7 @@
 const currentDate = new Date();
-const month = currentDate.getMonth();
-const year = currentDate.getFullYear();
+let month = currentDate.getMonth();
+let year = currentDate.getFullYear();
+
 function generateCalendar(year, month) {
     switch (month) {
         case 0:
@@ -46,8 +47,24 @@ function generateCalendar(year, month) {
 }
 document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
 
-function generatePrevMonth(){
-    
+function generatePrevMonth() {
+    month--;
+    if(month === -1) {
+        month = 11;
+        year--;
+    }
+    generateCalendar(year, month)
+}
+
+//YOUDO:  implement generateNextMonth Function
+
+function generateNextMonth() {
+    month++;
+    if(month === 12) {
+        month = 0;
+        year++;
+    }
+    generateCalendar(year, month)
 }
 
 const calendarMap = new Map([
@@ -85,7 +102,14 @@ const calendarMap = new Map([
     [32, "5-4"],
     [33, "5-5"],
     [34, "5-6"],
-    [35, "5-7"]
+    [35, "5-7"],
+    [36, "6-1"],
+    [37, "6-2"],
+    [38, "6-3"],
+    [39, "6-4"],
+    [40, "6-5"],
+    [41, "6-6"],
+    [42, "6-7"]
 ]);
 
 const firstDayDate = new Date(year, month, 1);
@@ -97,11 +121,11 @@ lastDayofMonth.setDate(lastDayofMonth.getDate() - 1);
 const lastDayOfMonthNumber = lastDayofMonth.getDate();
 console.log(lastDayOfMonthNumber);
 
-for(let i = 1; i <= 35; i++){
+for(let i = 1; i <= 42; i++){
     let dayNum = i - firstDayNumber + 1;
     let id = calendarMap.get(i);
 
-    if (dayNum >= 1 && dayNum <= 31) {
+    if (dayNum >= 1 && dayNum <= lastDayOfMonthNumber) {
         document.getElementById(id).innerHTML = dayNum;
     }
     else {
@@ -109,4 +133,4 @@ for(let i = 1; i <= 35; i++){
     }
 }
 
-generateCalendar(year,month)
+generateCalendar(year, month)
