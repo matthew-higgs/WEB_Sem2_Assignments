@@ -46,6 +46,9 @@ function generateCalendar(year, month) {
 }
 document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
 
+function generatePrevMonth(){
+    
+}
 
 const calendarMap = new Map([
     [1, "1-1"],
@@ -105,3 +108,5 @@ for(let i = 1; i <= 35; i++){
         document.getElementById(id).innerHTML = "";
     }
 }
+
+generateCalendar(year,month)
