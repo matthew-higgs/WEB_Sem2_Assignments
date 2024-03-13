@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: bisque;
+        }
+
+        .flex-container > div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }        
+        * {
+        box-sizing: border-box;
+        }
+
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+
+        .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        }
+
+        @media (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+
+        @media (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>H</div>
+        <div>e</div>
+        <div>l</div>
+        <div>l</div>
+        <div>o</div>
+        <div>T</div>
+        <div>h</div>
+        <div>e</div>
+        <div>r</div>
+        <div>e</div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+            <img src="lewk.PNG" style="width:100%">
+        </div>
+    </div>
+</body>
+</html>
