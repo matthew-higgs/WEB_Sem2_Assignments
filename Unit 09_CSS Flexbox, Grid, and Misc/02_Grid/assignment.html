@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids, Grids, Grids</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: black;
+            padding: 10px;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .container > div {
+            background-color: orange;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            transition-duration: 0.50s;
+        }
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;   
+        }
+
+        .container > div:hover {
+            background-color: rgb(255, 213, 134);
+        }
+
+        .container2 {
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <img src="girlsgirlsgirls.jpg">
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item1">0</div>
+    </div>
+</body>
+</html>
