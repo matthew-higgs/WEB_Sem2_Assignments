@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+          background-color: burlywood;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+        }
+        
+        @media screen and (max-width: 800px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+
+        h1 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        </style>
+</head>
+<body>
+    <h1>Resize this window!</h1>
+
+    <div class="row">
+        <div class="column">
+            <img src="axlrose.jpg" style="width: 100%;">
+            <img src="jimihendrix.jpg" style="width: 100%;">
+            <img src="jimmorrison.jpg" style="width: 100%;">
+            <img src="johnlennon.png" style="width: 100%;">
+            <img src="mickjagger.png" style="width: 100%;">
+            <img src="keithrichards.jpg" style="width: 100%;">
+            <img src="lobot.jpeg" style="width: 100%;">
+        </div>
+
+        <div class="column">
+            <img src="paulmccartney.jpeg" style="width: 100%;">
+            <img src="georgeharrison.jpg" style="width: 100%;">
+            <img src="ringostarr.png" style="width: 100%;">
+            <img src="ozzyosbourne.png" style="width: 100%;">
+            <img src="peeweeherman.png" style="width: 100%;">
+            <img src="prince.jpg" style="width: 100%;">
+            <img src="rickrubin.jpg" style="width: 100%;">
+        </div>
+
+        <div class="column">
+            <img src="r2d2.jpeg" style="width: 100%;">
+            <img src="c3po.jpeg" style="width: 100%;">
+            <img src="darthvader.jpg" style="width: 100%;">
+            <img src="Bono.png" style="width: 100%;">
+            <img src="theedge.jpg" style="width: 100%;">
+            <img src="johnstamos.jpg" style="width: 100%;">
+            <img src="davecoulier.jpg" style="width: 100%;">
+        </div>
+
+        <div class="column">
+            <img src="bobsaget.webp" style="width: 100%;">
+            <img src="markhamill.jpg" style="width: 100%;">
+            <img src="hansolo.png" style="width: 100%;">
+            <img src="carriefisher.png" style="width: 100%;">
+            <img src="chewbacca.png" style="width: 100%;">
+            <img src="landocalrissian.jpg" style="width: 100%;">
+            <img src="bobdylan.jpg" style="width: 100%;">
+        </div>
+    </div>
+</body>
+</html>
