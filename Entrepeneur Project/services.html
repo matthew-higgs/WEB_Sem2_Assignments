@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdcage Spa</title>
+    <style>
+        @font-face {
+          font-family: PlayfairSemiBold;
+          src: url(PlayfairDisplay-SemiBold.ttf);
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          background-color: gold;
+        }
+
+        .topnav {
+          overflow: hidden;
+          background-color: grey;
+        }
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .topnav .search-container {
+          float: right;
+        }
+
+        .topnav input[type=text] {
+          padding: 6px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+        }
+
+        .topnav .search-container button {
+          float: right;
+          padding: 6px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .topnav .search-container button:hover {
+          background: #ccc;
+        }
+
+        @media screen and (max-width: 600px) {
+          .topnav .search-container {
+            float: none;
+          }
+
+          .topnav a, .topnav input[type=text], .topnav .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+          }
+          
+          .topnav input[type=text] {
+            border: 1px solid #ccc;  
+          }
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 10px 10px;
+            grid-template-columns: auto auto auto auto;
+            background: rgb(246,246,228);
+            background: -moz-radial-gradient(circle, rgba(246,246,228,1) 0%, rgba(168,168,151,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(246,246,228,1) 0%, rgba(168,168,151,1) 100%);
+            background: radial-gradient(circle, rgba(246,246,228,1) 0%, rgba(168,168,151,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6f6e4",endColorstr="#a8a897",GradientType=1); 
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .grid-item {
+            background: rgb(22,41,106);
+            background: linear-gradient(90deg, rgba(22,41,106,1) 5%, rgba(26,101,179,1) 32%, rgba(180,32,186,1) 100%);
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 5px;
+            font-family: PlayfairSemiBold;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="homepage.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="#">Make an Appointment</a>
+        <a href="#">Contact Info</a>
+        <a href="#">Policies</a>
+        <a href="#">Reviews</a>
+        <a href="#">About</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="grid-container">
+        <div class="grid-item">Barber <br> <img src="barber.jpeg" width="550px" height="350px"></div>
+        <div class="grid-item">Shopkeeper <br> <img src="shopkeeper.jpeg" width="550px" height="350px"></div>
+        <div class="grid-item">Nails <br> <img src="nails.jpg" width="550px" height="350px"></div>
+        <div class="grid-item">Makeup <br> <img src="makeup.jpeg" width="550px" height="350px"></div>
+        <div class="grid-item">Massage <br> <img src="massage.jpg" width="550px" height="350px"></div>
+        <div class="grid-item">Aromatherapy <br> <img src="aromatherapy.jpg" width="550px" height="350px"></div>
+        <div class="grid-item">Waxing <br> <img src="waxing.jpg" width="550px" height="350px"></div>
+        <div class="grid-item">Custodian <br> <img src="custodian.jpg" width="550px" height="350px"></div>
+      </div>
+</body>
+</html>
