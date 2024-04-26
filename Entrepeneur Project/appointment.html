@@ -11,6 +11,11 @@
           src: url(PlayfairDisplay-SemiBold.ttf);
         }
 
+        @font-face {
+          font-family: PlayfairRegular;
+          src: url(PlayfairDisplay-Regular.ttf);
+        }
+
         * {
           box-sizing: border-box;
         }
@@ -99,6 +104,8 @@
       }
 
       .submit {
+        display: inline-block;
+        outline: none;
         font-family: Arial, Helvetica, sans-serif;
         background-color: gold;
         border-radius: 50px;
@@ -106,6 +113,15 @@
         height: 35px;
         font-size: large;
         color: black;
+        box-shadow: 0 9px #999;
+      }
+
+      .submit:hover {background-color: #3e8e41}
+
+      .submit:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
       }
     </style>
 </head>
@@ -131,9 +147,26 @@
           <input type="text" id="uname" name="name"/>
           <p style="font-family: PlayfairSemiBold;">Second Name</p>
           <input type="text" id="uname" name="name"/>
+          <p style="font-family: PlayfairSemiBold;">Gender</p>
+          <form action="/action_page.php">
+            <input type="radio" id="male" name="fav_language" value="MALE">
+            <label for="male" style="font-family: PlayfairRegular;">Male</label><br>
+            <input type="radio" id="female" name="fav_language" value="FEMALE">
+            <label for="css" style="font-family: PlayfairRegular;">Female</label><br>
+            <input type="radio" id="prefernottotell" name="fav_language" value="PreferNottoTell">
+            <label for="javascript" style="font-family: PlayfairRegular;">Prefer Not to Tell</label>
+          </form>
           <br>
-          <br>
-          <button class="submit">Submit</button>
+          <form action="/action_page.php">
+            <label for="appointment" style="font-family: PlayfairSemiBold;">Appointment (date and time):</label><br>
+            <input type="datetime-local" id="appointment" name="appointment" style="margin-top: 5px;">
+          </form>
+          <button class="submit" onclick="audio.play()" style="margin-top: 85px; margin-left: 199px;">Submit</button>
+          <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "honk.mp3";
+          </script>
       </div>
+      <img src="barber2.png" style="width: 500px; height: auto;">
 </body>
 </html>
