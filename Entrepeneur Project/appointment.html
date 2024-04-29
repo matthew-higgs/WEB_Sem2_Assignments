@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birdcage Spa</title>
+    <link rel="icon" href="images/favicon.ico">
     <style>
         @font-face {
           font-family: PlayfairSemiBold;
@@ -141,7 +142,8 @@
             </form>
           </div>
       </div>
-
+      
+      <img src="barber2.png" style="width: 300px; height: auto; border-radius: 10px; margin-left: 790px; margin-top: 23px; position: absolute;">
       <div class="bookingui">
           <p style="font-family: PlayfairSemiBold;">First Name</p>
           <input type="text" id="uname" name="name"/>
@@ -149,12 +151,14 @@
           <input type="text" id="uname" name="name"/>
           <p style="font-family: PlayfairSemiBold;">Gender</p>
           <form action="/action_page.php">
-            <input type="radio" id="male" name="fav_language" value="MALE">
+            <input type="radio" id="male" name="gender" value="MALE">
             <label for="male" style="font-family: PlayfairRegular;">Male</label><br>
-            <input type="radio" id="female" name="fav_language" value="FEMALE">
-            <label for="css" style="font-family: PlayfairRegular;">Female</label><br>
-            <input type="radio" id="prefernottotell" name="fav_language" value="PreferNottoTell">
-            <label for="javascript" style="font-family: PlayfairRegular;">Prefer Not to Tell</label>
+
+            <input type="radio" id="female" name="gender" value="FEMALE">
+            <label for="female" style="font-family: PlayfairRegular;">Female</label><br>
+
+            <input type="radio" id="prefernottotell" name="gender" value="PreferNottoTell">
+            <label for="prefernottotell" style="font-family: PlayfairRegular;">Prefer Not to Tell</label>
           </form>
           <br>
           <form action="/action_page.php">
@@ -167,6 +171,5 @@
             audio.src = "honk.mp3";
           </script>
       </div>
-      <img src="barber2.png" style="width: 500px; height: auto;">
 </body>
 </html>

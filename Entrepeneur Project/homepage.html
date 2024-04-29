@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birdcage Spa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico">
     <style>
         * {
           box-sizing: border-box;
@@ -92,13 +93,56 @@
             border: 1px solid #ccc;  
           }
         }
+
+        .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        margin-left: 748px;
+        margin-top: 90px;
+      }
+
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 748px;
+        margin-top: -1px;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {background-color: #ddd;}
+
+      .show {display: block;}
     </style>
 </head>
 <body>
     <div class="topnav">
         <a href="homepage.html">Home</a>
         <a href="services.html">Services</a>
-        <a href="#">Make an Appointment</a>
+        <a href="appointment.html">Make an Appointment</a>
         <a href="#">Contact Info</a>
         <a href="#">Policies</a>
         <a href="#">Reviews</a>
@@ -111,15 +155,34 @@
           </div>
       </div>
 
-      <br>
+      <h1 style="position: absolute; margin-left: 589px;">Ethereal Lashes & Esthetics</h1>
 
-      <div class="content">
-        <h2>CSS Template</h2>
-        <p>A topnav, content and a footer.</p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
-      
-      <div class="footer">
-        <p>Footer</p>
-      </div>
+
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 </body>
 </html>
